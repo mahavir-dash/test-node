@@ -1,0 +1,16 @@
+[workspace]
+members = [
+	"node",
+	"runtime",
+	"frame/balances",
+	"frame/balances/rpc",
+	"frame/balances/rpc/runtime-api",
+	"client/consensus/manual-seal",
+]
+resolver = "2"
+exclude = [
+	"contracts",
+]
+
+[profile.release]
+panic = "unwind"
